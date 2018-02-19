@@ -12,28 +12,30 @@
 
     <div class="container">
 
-        <h1>Survey Questions</h1>
+      <h1>Survey Questions</h1>
 
        <div class="section">
 
           <h5>Tell us about yourself.</h5>
 
           <div class="row">
-            <form class="col s12">
+            <form class="col s12" id="formValidate">
               <div class="row">
                 <div class="input-field col s12 m6">
-                  <input id="name" type="text" class="validate">
-                  <label for="name">Your Name</label>
+                  <input data-error=".errorTxt1" id="friendName" name="friendName" type="text" class="validate">
+                  <label for="friendName">Your Name</label>
+                  <div class="errorTxt1"></div>
                 </div>
                 <div class="input-field col s12 m6">
-                  <input id="photo_link" type="text" class="validate">
-                  <label for="photo_link">Photo Link</label>
+                  <input data-error=".errorTxt2" id="photoLink" name="photoLink" type="url" class="validate">
+                  <label for="photoLink">Photo Link</label>
+                  <div class="errorTxt2"></div>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
                   <p>My mind is always buzzing with unexplored ideas and plans.</p>
-                  <select>
+                  <select data-error=".errorTxt3" id="q1" name="q1">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -41,11 +43,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt3"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>Generally speaking, I rely more on my experience than my imagination.</p>
-                  <select>
+                  <select data-error=".errorTxt4" id="q2" name="q2">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -53,11 +56,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt4"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>I find it easy to stay relaxed and focused even when there is some pressure.</p>
-                  <select>
+                  <select data-error=".errorTxt5" id="q3" name="q3">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -65,11 +69,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt5"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>I rarely do something just out of sheer curiosity.</p>
-                  <select>
+                  <select data-error=".errorTxt6" id="q4" name="q4">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -77,11 +82,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt6"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>People rarely upset me.</p>
-                  <select>
+                  <select data-error=".errorTxt7" id="q5" name="q5">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -89,11 +95,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt7"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>It is often difficult for me to relate to other people’s feelings.</p>
-                  <select>
+                  <select data-error=".errorTxt8" id="q6" name="q6">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -101,11 +108,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt8"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>In a discussion, truth should be more important than people’s sensitivities.</p>
-                  <select>
+                  <select data-error=".errorTxt9" id="q7" name="q7">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -113,11 +121,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt9"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>I rarely get carried away by fantasies and ideas.</p>
-                  <select>
+                  <select data-error=".errorTxt10" id="q8" name="q8">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -125,11 +134,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt10"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>I think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
-                  <select>
+                  <select data-error=".errorTxt11" id="q9" name="q9">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -137,11 +147,12 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt11"></div>
                 </div>
 
                 <div class="input-field col s12">
                   <p>I feel more energetic after spending time with a group of people.</p>
-                  <select>
+                  <select data-error=".errorTxt12" id="q10" name="q10">
                     <option value="" disabled selected>What do you think?</option>
                     <option value="1">Disagree Strongly</option>
                     <option value="2">Disagree Somewhat</option>
@@ -149,20 +160,20 @@
                     <option value="4">Agree Somewhat</option>
                     <option value="5">Agree Strongly</option>
                   </select>
+                  <div class="errorTxt12"></div>
                 </div>
 
               </div>
+
+              <div class="row">
+                <div class="col s3"></div>
+
+                <button class="col s6 btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+
             </form>
-          </div>
-
-          <div class="row">
-            <div class="col s3">
-
-            </div>
-
-            <button class="col s6 btn waves-effect waves-light" type="submit" name="action">Submit
-              <i class="material-icons right">send</i>
-            </button>
           </div>
 
        </div>
@@ -175,16 +186,88 @@
   crossorigin="anonymous"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
 
   <script type="text/javascript">
 
     $(document).ready(function() {
+
+      $("button").on("click", function(event) {
+        event.preventDefault();
+
+        $("#formValidate").validate({
+        rules: {
+          friendName:"required",
+          photoLink: {
+              required: true,
+              url: true
+          },
+          q1:"required",
+          q2:"required",
+          q3:"required",
+          q4:"required",
+          q5:"required",
+          q6:"required",
+          q7:"required",
+          q8:"required",
+          q9:"required",
+          q10:"required"
+        },
+          //For custom messages
+        messages: {
+          friendName:"Please enter your name.",
+          photoLink: "Please enter a valid web address."
+        },
+        errorElement: 'div',
+        errorPlacement: function(error, element) {
+          var placement = $(element).data('error');
+          if (placement) {
+            $(placement).append(error)
+          } else {
+            error.insertAfter(element);
+          }
+        }
+        });
+
+        let q1 = parseInt($("#q1>option:selected").val().trim()),
+            q2 = parseInt($("#q2>option:selected").val().trim()),
+            q3 = parseInt($("#q3>option:selected").val().trim()),
+            q4 = parseInt($("#q4>option:selected").val().trim()),
+            q5 = parseInt($("#q5>option:selected").val().trim()),
+            q6 = parseInt($("#q6>option:selected").val().trim()),
+            q7 = parseInt($("#q7>option:selected").val().trim()),
+            q8 = parseInt($("#q8>option:selected").val().trim()),
+            q9 = parseInt($("#q9>option:selected").val().trim()),
+            q10 = parseInt($("#q10>option:selected").val().trim());
+
+
+        // Here we grab the form elements
+        let newFriend = {
+          friendName: $("#friendName").val().trim(),
+          photoLink: $("#photoLink").val().trim(),
+          scores: [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10]
+        };
+
+        console.log(newFriend);
+
+        $.post("/api/friends", newFriend,
+          function(data) {
+
+            // Clear the form when submitting
+            $("form input").val("");
+            $('select').prop('selectedIndex', 0);
+            $('select').material_select();
+          });
+
+      });
+
       $('select').material_select();
     });
 
   </script>
 
   <!-- Linking does not work for some reason. -->
-  <!-- <script type="text/javascript" src="init.js"></script> -->
+  <!-- <script type="text/javascript" src="./init.js"></script> -->
 
 </html>
